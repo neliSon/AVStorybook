@@ -6,13 +6,17 @@
 //  Copyright © 2016 Nelson Chow. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "StoryPartViewController.h"
 
-@interface ViewController ()
+@interface StoryPartViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *microphoneButton;
+@property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 
 @end
 
-@implementation ViewController
+@implementation StoryPartViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +26,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)microphoneButton:(id)sender {
+    
+}
+
+- (IBAction)cameraButton:(id)sender {
+    
 }
 
 @end

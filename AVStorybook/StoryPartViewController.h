@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface StoryPartViewController : UIViewController
 
+- (IBAction)microphoneButton:(id)sender;
+- (IBAction)cameraButton:(id)sender;
 
 @end
 

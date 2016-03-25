@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Story Part View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StoryPartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-fG-S0E">
+                                <rect key="frame" x="20" y="20" width="560" height="400"/>
+                                <color key="backgroundColor" red="0.65664540823877326" green="1" blue="0.9919902574629289" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="PE5-BP-Skt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9T3-dF-2HC">
+                                <rect key="frame" x="110" y="470" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="microphoneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uny-8z-GDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S13-r5-ciq">
+                                <rect key="frame" x="444" y="470" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xR-6w-RRX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qVx-fG-S0E" secondAttribute="trailing" id="DVy-eq-Sn9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S13-r5-ciq" secondAttribute="trailing" constant="90" id="LSB-v1-0cQ"/>
+                            <constraint firstItem="S13-r5-ciq" firstAttribute="top" secondItem="qVx-fG-S0E" secondAttribute="bottom" constant="50" id="TqW-Vd-3ds"/>
+                            <constraint firstItem="9T3-dF-2HC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="WrK-QH-4cc"/>
+                            <constraint firstItem="9T3-dF-2HC" firstAttribute="top" secondItem="qVx-fG-S0E" secondAttribute="bottom" constant="50" id="b8r-bV-jDe"/>
+                            <constraint firstItem="qVx-fG-S0E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dZK-I8-YSu"/>
+                            <constraint firstItem="qVx-fG-S0E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hHv-LT-JHJ"/>
+                            <constraint firstItem="qVx-fG-S0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xly-Bw-ZqX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="S13-r5-ciq" id="bfT-Xc-R9U"/>
+                        <outlet property="imageView" destination="qVx-fG-S0E" id="7wf-ob-VHg"/>
+                        <outlet property="microphoneButton" destination="9T3-dF-2HC" id="OHy-Zm-dDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="252" y="302"/>
         </scene>
     </scenes>
 </document>

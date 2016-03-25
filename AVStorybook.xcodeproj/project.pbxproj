@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		1BFB2A1B1CA5EC8F007DC0A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2A1A1CA5EC8F007DC0A8 /* main.m */; };
 		1BFB2A1E1CA5EC8F007DC0A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2A1D1CA5EC8F007DC0A8 /* AppDelegate.m */; };
-		1BFB2A211CA5EC8F007DC0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2A201CA5EC8F007DC0A8 /* ViewController.m */; };
+		1BFB2A211CA5EC8F007DC0A8 /* StoryPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2A201CA5EC8F007DC0A8 /* StoryPartViewController.m */; };
 		1BFB2A241CA5EC8F007DC0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB2A221CA5EC8F007DC0A8 /* Main.storyboard */; };
 		1BFB2A261CA5EC8F007DC0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB2A251CA5EC8F007DC0A8 /* Assets.xcassets */; };
 		1BFB2A291CA5EC8F007DC0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFB2A271CA5EC8F007DC0A8 /* LaunchScreen.storyboard */; };
+		1BFB2A371CA5F125007DC0A8 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2A361CA5F125007DC0A8 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		1BFB2A1A1CA5EC8F007DC0A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BFB2A1C1CA5EC8F007DC0A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BFB2A1D1CA5EC8F007DC0A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BFB2A1F1CA5EC8F007DC0A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BFB2A201CA5EC8F007DC0A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BFB2A1F1CA5EC8F007DC0A8 /* StoryPartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryPartViewController.h; sourceTree = "<group>"; };
+		1BFB2A201CA5EC8F007DC0A8 /* StoryPartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryPartViewController.m; sourceTree = "<group>"; };
 		1BFB2A231CA5EC8F007DC0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BFB2A251CA5EC8F007DC0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BFB2A281CA5EC8F007DC0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFB2A2A1CA5EC8F007DC0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFB2A351CA5F125007DC0A8 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		1BFB2A361CA5F125007DC0A8 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,11 @@
 		1BFB2A181CA5EC8F007DC0A8 /* AVStorybook */ = {
 			isa = PBXGroup;
 			children = (
-				1BFB2A1C1CA5EC8F007DC0A8 /* AppDelegate.h */,
-				1BFB2A1D1CA5EC8F007DC0A8 /* AppDelegate.m */,
-				1BFB2A1F1CA5EC8F007DC0A8 /* ViewController.h */,
-				1BFB2A201CA5EC8F007DC0A8 /* ViewController.m */,
-				1BFB2A221CA5EC8F007DC0A8 /* Main.storyboard */,
-				1BFB2A251CA5EC8F007DC0A8 /* Assets.xcassets */,
-				1BFB2A271CA5EC8F007DC0A8 /* LaunchScreen.storyboard */,
-				1BFB2A2A1CA5EC8F007DC0A8 /* Info.plist */,
+				1BFB2A331CA5ECC5007DC0A8 /* UI */,
+				1BFB2A311CA5ECBB007DC0A8 /* View */,
+				1BFB2A321CA5ECBF007DC0A8 /* Controller */,
+				1BFB2A301CA5ECB2007DC0A8 /* Model */,
+				1BFB2A341CA5ECDB007DC0A8 /* Assets */,
 				1BFB2A191CA5EC8F007DC0A8 /* Supporting Files */,
 			);
 			path = AVStorybook;
@@ -77,6 +77,51 @@
 				1BFB2A1A1CA5EC8F007DC0A8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BFB2A301CA5ECB2007DC0A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB2A1C1CA5EC8F007DC0A8 /* AppDelegate.h */,
+				1BFB2A1D1CA5EC8F007DC0A8 /* AppDelegate.m */,
+				1BFB2A351CA5F125007DC0A8 /* Model.h */,
+				1BFB2A361CA5F125007DC0A8 /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1BFB2A311CA5ECBB007DC0A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1BFB2A321CA5ECBF007DC0A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB2A1F1CA5EC8F007DC0A8 /* StoryPartViewController.h */,
+				1BFB2A201CA5EC8F007DC0A8 /* StoryPartViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1BFB2A331CA5ECC5007DC0A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB2A221CA5EC8F007DC0A8 /* Main.storyboard */,
+				1BFB2A271CA5EC8F007DC0A8 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1BFB2A341CA5ECDB007DC0A8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1BFB2A251CA5EC8F007DC0A8 /* Assets.xcassets */,
+				1BFB2A2A1CA5EC8F007DC0A8 /* Info.plist */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFB2A211CA5EC8F007DC0A8 /* ViewController.m in Sources */,
+				1BFB2A211CA5EC8F007DC0A8 /* StoryPartViewController.m in Sources */,
 				1BFB2A1E1CA5EC8F007DC0A8 /* AppDelegate.m in Sources */,
 				1BFB2A1B1CA5EC8F007DC0A8 /* main.m in Sources */,
+				1BFB2A371CA5F125007DC0A8 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
